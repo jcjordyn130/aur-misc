@@ -1,0 +1,14 @@
+--- src/halt.c	2016-08-24 12:05:53.536495057 -0500
++++ src/busybox-1.25.0/init/halt.c	2016-05-26 12:42:44.000000000 -0500
+@@ -7,9 +7,9 @@
+  * Licensed under GPLv2, see file LICENSE in this source tree.
+  */
+ 
+-//applet:IF_HALT(APPLET(halt, BB_DIR_SBIN, BB_SUID_MAYBE))
+-//applet:IF_HALT(APPLET_ODDNAME(poweroff, halt, BB_DIR_SBIN, BB_SUID_MAYBE, poweroff))
+-//applet:IF_HALT(APPLET_ODDNAME(reboot, halt, BB_DIR_SBIN, BB_SUID_MAYBE, reboot))
++//applet:IF_HALT(APPLET(halt, BB_DIR_SBIN, BB_SUID_DROP))
++//applet:IF_HALT(APPLET_ODDNAME(poweroff, halt, BB_DIR_SBIN, BB_SUID_DROP, poweroff))
++//applet:IF_HALT(APPLET_ODDNAME(reboot, halt, BB_DIR_SBIN, BB_SUID_DROP, reboot))
+ 
+ //kbuild:lib-$(CONFIG_HALT) += halt.o
