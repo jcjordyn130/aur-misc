@@ -1,5 +1,5 @@
 --- halt.c	2016-08-24 15:47:28.367039363 -0500
-+++ busybox-pkgverhere/init/halt.c	2016-05-26 12:42:44.000000000 -0500
++++ busybox-1.25.0/init/halt.c	2016-05-26 12:42:44.000000000 -0500
 @@ -7,9 +7,9 @@
   * Licensed under GPLv2, see file LICENSE in this source tree.
   */
