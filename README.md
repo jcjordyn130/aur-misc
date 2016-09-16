@@ -7,4 +7,4 @@ Go to the folder of the package you want to build
 then run: makepkg --syncdeps
 
 ## To install
-run [as root]: pacman -U *pkg.*
+run [as root]: pacman -U "*pkg.*"
